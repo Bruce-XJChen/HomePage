@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <!--
 	Dopetrope by HTML5 UP	html5up.net | @ajlkn	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
+
+  <script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tfhover').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+      tbRow[i]=document.getElementById('tfhover').rows[i];
+      tbRow[i].onmouseover = function(){
+        this.style.backgroundColor = '#f3f8aa';
+      };
+      tbRow[i].onmouseout = function() {
+        this.style.backgroundColor = '#ffffff';
+      };
+    }
+  };
+  </script>
+  
+  <style type="text/css">
+  table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+  table.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+  table.tftable tr {background-color:#ffffff;}
+  table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+  </style>
+
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -32,7 +56,7 @@
           <li><a href="committees.html">Committees</a></li>
           <li><a href="submission.html">Submission information </a></li>
           <li class="current"><a href="program.html">Program</a></li>
-          <li><a href="keynote.html">Keynote speaker</a></li>
+          <!--<li><a href="keynote.html">Keynote speaker</a></li>-->
           </ul>
         </nav>
       </section>
@@ -48,8 +72,24 @@
                 <header>
                   <h2>Program</h2>
                 </header>
-                <p><strong>Workshop time: December 4, 2021 </strong></p>
-                <p>Upcoming...</p>
+                <p><strong>Workshop time (Beijing Time): 11:00-14:00, December 1, 2023 </strong></p>
+  
+<table id="tfhover" class="tftable" border="1">
+<tr><th>Time (Beijing Time)</th><th>Title</th><th>Presenter/Author</th></tr>
+<tr><td>11:00-11:10</td><td>Opening Remarks</td><td>Organizers</td></tr>
+<tr><td>11:10-11:35</td><td>EL-VIT: Probing Vision Transformer with Interactive Visualization</td><td>Hong Zhou, Rui Zhang, Peifeng Lai, Chaoran Guo, Yong Wang, Zhida Sun, and Junjie Li</td></tr>
+<tr><td>11:35-12:00</td><td>Multi-modal Chinese Fake News Detection</td><td>Wenxi Huang, Zhangyi Zhao, Xiaojun
+Chen, Mark Junjie Li, Qin Zhang, and
+Philippe Fournier-Viger</td></tr>
+<tr><td>12:30-12:55</td><td>Multimodal Deep Learning with Boosted Trees for Edge Inference</td><td>Penny Chong, Laura Wynter, and
+Bharathi Chaudhury</td></tr>
+<tr><td>12:55-13:20</td><td>Think as People: Context-driven Multi-image News Captioning with Adaptive
+Dual Attention</td><td>Qiang Yang, Xiaodong Wu, Xiuying
+Chen, Xin Gao, and Xiangliang Zhan</td></tr>
+<tr><td>13:20-13:45</td><td>Exploring Universal Graph Structure for Cross-Modal Retrieval</td><td>Youguang Xing, Leiting Chen, Lei Zhang, Yuanlong Liu, Xin Luo, Chuan
+Zhou, and Weihua Ou</td></tr>
+<tr><td>13:45-14:00</td><td>Closing Remarks</td><td>Organizers</td></tr>
+</table>
               </article>
             </div>
             <div class="col-4 col-12-medium">
@@ -62,7 +102,7 @@
                   <li>Paper submission deadline: <del>September 3</del> September 15, 2023</li>
                   <li>Paper notifications: October 6, 2023</li>
                   <li>Camera-ready deadline and copyright forms: October 13, 2023</li>
-                  <li>Workshop date: December 4, 2023</li>
+                  <li>Workshop date: December 1, 2023</li>
                   <li>**All times are at 11:59PM Beijing Time**</li>
                 </ul>
               </section>
